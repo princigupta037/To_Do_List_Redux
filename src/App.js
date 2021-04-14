@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 import { selectTodoList } from './features/todoSlice'
 
 
-const todoList = useSelector(selectTodoList)
+
 // const todoList = [{
 //   item: 'todo1',
 //   done:false,
@@ -21,9 +21,13 @@ const todoList = useSelector(selectTodoList)
 
 
 function App() {
+
+  const todoList = useSelector(selectTodoList)
   return (
     <div className="app">
+     
       <div className="app_container">
+      <div>My ToDo's  </div>
         <div className="app_todocontainer">
           {
             todoList.map(item=> (

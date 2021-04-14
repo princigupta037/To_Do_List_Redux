@@ -3,7 +3,7 @@ import './Input.css';
 import { useDispatch } from 'react-redux';
 import saveTodo from '../features/todoSlice'
 
-export default function Input() {
+const Input=()=> {
 
     const [input, setInput] = useState('')
     const dispatch = useDispatch()
@@ -28,3 +28,5 @@ export default function Input() {
         </div>
     )
 }
+
+export default Input
